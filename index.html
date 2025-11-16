@@ -10,33 +10,27 @@
   <div class="container">
     <!-- SIDEBAR -->
     <aside class="side-panel">
-      
-  <img class="app-logo desktop-logo" src="assets/logo-light.svg" alt="Logo" />
-  
-
+      <img class="app-logo desktop-logo" src="assets/logo-light.svg" alt="Logo" />
       <p class="all-boards">ALL BOARDS (1)</p>
       <div class="board-pill" id="boardName">Launch Career</div>
-      <!-- Theme toggle placeholder (optional) -->
-      <div class="bottom-area">
-      </div>
+      <div class="bottom-area"></div>
     </aside>
 
     <!-- TOP HEADER -->
     <header class="heading">
-       <div class="hidden-logo">
-      <img class="app-logo mobile-logo" src="assets/favicon.svg" alt="Logo Small" />
+      <div class="hidden-logo">
+        <img class="app-logo mobile-logo" src="assets/favicon.svg" alt="Logo Small" />
       </div>
       <div class="hidden-h1">
         <div class="board-indicator">
-        <h1>Launch Career</h1>
+          <h1>Launch Career</h1>
         </div>
       </div>
 
       <div class="heading-right">
-        <!-- Desktop: second rectangle add button (top-right) -->
+        <!-- Desktop: top-right add button -->
         <button class="add-btn" id="addTaskTopRight">+ Add New Task</button>
-
-        <!-- Mobile / tablet: single circle button inside header (will show on small screens) -->
+        <!-- Mobile / tablet: circle button -->
         <button id="addTaskMobile" class="circle-btn" aria-label="Add Task">+</button>
       </div>
     </header>
@@ -64,7 +58,7 @@
     </section>
   </div>
 
-  <!-- Floating Add Button (optional, hidden on mobile by design) -->
+  <!-- Floating Add Button (optional) -->
   <button id="addTaskFab" class="fab" aria-label="Add Task">+</button>
 
   <!-- MODAL -->
@@ -90,7 +84,11 @@
         </select>
 
         <div class="modal-actions">
-          <button type="submit" class="primary">Create Task</button>
+          <!-- Primary submit toggles between create and save -->
+          <button type="submit" class="primary" id="primaryAction">Create Task</button>
+          <!-- When viewing a task, show Edit / Delete buttons -->
+          <button type="button" class="secondary" id="editAction" style="display:none">Edit</button>
+          <button type="button" class="danger" id="deleteAction" style="display:none">Delete</button>
         </div>
       </form>
     </div>
