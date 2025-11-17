@@ -1,4 +1,4 @@
-#🎯 README – JSL05 Task Board with Local Storage
+🎯 README – JSL05 Task Board with Local Storage
 📌 Project Title
 🗂️ Task Board Application with Local Storage Persistence
 📝 Project Description
